@@ -1,0 +1,42 @@
+.LoansForm{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .LoansForm__details{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+.Redact,.Save{
+    margin: 25px 0;
+    font-weight: bold;
+    
+}
+.Save{
+    color: #fff;
+    background: #ff9908;
+}
+.Save:hover{
+    background-color: #fe830e;
+}
+.contentSave{
+    display: flex;
+    flex-direction: row;
+    label{
+        cursor: pointer;
+        background-color: #bcedb7;
+        color: #028f58!important;
+        border: none;
+        padding: 10px 25px;
+        border-radius: 6px;
+        font-size: 12px!important;
+        text-transform: uppercase;
+        text-align: left;
+        margin-top: 10px;
+        white-space: nowrap;
+    }
+    label:hover{
+        background-color: #ade2a7;
+    }
+}

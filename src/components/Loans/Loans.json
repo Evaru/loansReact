@@ -1,0 +1,122 @@
+[
+    {
+        "data": {
+          "number": "1",
+          "status": "approved",
+          "status_id": 1,
+          "status_name": "Подтверждено",
+          "interest": 10,
+          "issue_date": "20.11.2019",
+          "return_date": "20.02.2020",
+          "issue_amount": 24000,
+          "issue_term": 120,
+          "repaid_amount": 26400,
+          "overdue_days": 10,
+          "issue_method": {
+            "issue_type": "BankCard",
+            "issue_method_details": {
+              "id": 12,
+              "number": "1234567891000000",
+              "is_active": true,
+              "card_type": "MasterCard",
+              "verified": true,
+              "message": "Ok"
+            }
+          },
+          "return_amount": "26400",
+          "return_on_current_date": "6600",
+          "prolongation_amount": "6600",
+          "documents": [
+            {
+              "id": 0,
+              "name": "string",
+              "type": "string",
+              "url": "string"
+            }
+          ]
+        },
+        "error": [
+          null
+        ]
+    },
+    {
+      "data": {
+        "number": "2",
+        "status": "approved",
+        "status_id": 1,
+        "status_name": "Подтверждено",
+        "interest": 11,
+        "issue_date": "11.11.2019",
+        "return_date": "25.02.2020",
+        "issue_amount": 26000,
+        "issue_term": 150,
+        "repaid_amount": 30000,
+        "overdue_days": 10,
+        "issue_method": {
+          "issue_type": "BankCard",
+          "issue_method_details": {
+            "id": 12,
+            "number": "1234567891000000",
+            "is_active": true,
+            "card_type": "VISA",
+            "verified": true,
+            "message": "Ok"
+          }
+        },
+        "return_amount": "22400",
+        "return_on_current_date": "7700",
+        "prolongation_amount": "7700",
+        "documents": [
+          {
+            "id": 0,
+            "name": "string",
+            "type": "string",
+            "url": "string"
+          }
+        ]
+      },
+      "error": [
+        null
+      ]
+    },
+    {
+      "data": {
+        "number": "3",
+        "status": "approved",
+        "status_id": 1,
+        "status_name": "Подтверждено",
+        "interest": 15,
+        "issue_date": "04.01.2019",
+        "return_date": "25.06.2019",
+        "issue_amount": 100000,
+        "issue_term": 180,
+        "repaid_amount": 130000,
+        "overdue_days": 1,
+        "issue_method": {
+          "issue_type": "BankCard",
+          "issue_method_details": {
+            "id": 12,
+            "number": "1234567891000000",
+            "is_active": true,
+            "card_type": "VISA",
+            "verified": true,
+            "message": "Ok"
+          }
+        },
+        "return_amount": "22400",
+        "return_on_current_date": "7700",
+        "prolongation_amount": "7700",
+        "documents": [
+          {
+            "id": 0,
+            "name": "string",
+            "type": "string",
+            "url": "string"
+          }
+        ]
+      },
+      "error": [
+        null
+      ]
+  }
+]

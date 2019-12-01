@@ -1,0 +1,49 @@
+.TextField{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 0;
+    justify-content: inherit;
+    padding: 15px;
+    label{
+        font-size: 16px;
+        color: #333f50;
+        margin: 0 8px 10px 10px;
+        font-weight: bold;
+        text-align: left;
+    }
+    %input{
+        width: auto;
+        min-width: 100px;
+        outline: none;
+        background: #fff;
+        border: none;
+        border-bottom: 1px solid #bdcacf;
+        height: 30px;
+        font-size: 18px;
+        color: #50b47e;
+        text-align: start;
+        margin: 0 8px 0 10px;
+    }
+    input{
+        @extend %input;
+    }
+    input[type=file]{
+        @extend %input;
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+        
+    }
+    input:focus{
+        background: #edf9fe;
+    }
+    span{
+        color: red
+    }
+    .inValid::placeholder{
+        color: red
+    }
+}

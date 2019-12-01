@@ -1,0 +1,46 @@
+.List{
+    width: 100%;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    
+    thead{
+        background: #beedb7;
+    }
+    tbody{
+        cursor: pointer;
+    }
+    tr{
+        text-align: left;
+        
+    } 
+    th,td{ 
+        padding: 20px;
+        border-bottom: 1px solid #bdcacf;
+    } 
+}
+
+@media screen and (max-width: 800px) {
+    .List {
+        border: 0;
+        thead {
+            display: none;
+        }
+        tr {
+            margin-bottom: 50px;
+            display: block;
+        }
+        td {
+            padding: 5px;
+            display: block;
+            text-align: right;
+            font-size: 13px;
+        }
+        td:before {
+            content: attr(data-label);
+            float: left;
+            text-transform: uppercase;
+            font-weight: bold;
+         }
+      }
+   
+}
