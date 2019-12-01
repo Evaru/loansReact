@@ -22,6 +22,7 @@ class Main extends Component {
                 <Router>                 
                     <main>
                         <Switch >
+                            <Route path="/" exact component={Loans}/>
                             <Route path="/api/loans" exact component={Loans}/>
                             <Route path="/api/loan/:id/detail" exact component={LoanDetails}/>
                             <Route path="/api/login" exact component={Login}/>
