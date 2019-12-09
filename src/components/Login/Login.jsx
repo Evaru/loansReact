@@ -8,19 +8,34 @@ class Login extends Component {
         super(props);  
         this.state = {};  
     }  
-    componentDidMount() {
-    }
-
+ 
     handleClick(event){
         
         event.preventDefault()
         const { username, password } = this.state
         localStorage.setItem('username', username);
         localStorage.setItem('password',password);
-        if(localStorage.username==="admin" && localStorage.password==='123'){
+        if(username==="admin" && password==='123'){
             this.props.history.push('/api/loans')
             location.reload()
-            
+        } else if(username!=="admin" && password!=="123"){
+            this.setState({
+                ...this.state,
+                errorMessageLogin: 'Введите верно логин',
+                errorMessagePassword: 'Введите верно пароль'
+            })
+        } else if(username!=="admin"){
+            this.setState({
+                ...this.state,
+                errorMessagePassword:null,
+                errorMessageLogin: 'Введите верно логин',
+            })
+        } else if(password!=="123"){
+            this.setState({
+                ...this.state,
+                errorMessageLogin:null,
+                errorMessagePassword: 'Введите верно пароль'
+            })
         }
         
     }
@@ -57,17 +72,18 @@ class Login extends Component {
                                     placeholder="Введите логин"
                                     onChange={(event)=>this.onChangeHandle(event)}
                                     required
+                                    errorMessage={this.state.errorMessageLogin}
                                 />
                                 <Input
                                     name='password'
                                     placeholder="Введите пароль"
                                     onChange={(event)=>this.onChangeHandle(event)}
                                     required
+                                    errorMessage={this.state.errorMessagePassword}
                                 />
                                 <div className="container__auth-form__submit">
                                     <button>Вход</button>
                                 </div>
-                                <span>{this.props.errorMessage}</span>
                             </form>
                         </div>
                     </div>

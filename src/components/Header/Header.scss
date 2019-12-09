@@ -21,9 +21,10 @@ header {
         padding-top: 7px;
         float: left;
         width: auto;
+        
         .row{
             display: flex;
-            background: url(./../../images/iconPhone.png) 0 4px no-repeat;
+            background: url(./../../images/iconPhone.png) 0 8px no-repeat;
             margin-bottom: 6px;
             padding-left: 28px;
             .region-phone-top {
@@ -33,7 +34,7 @@ header {
                 .content{
                     a{
                         strong{
-                            font-family: CirceBold;
+                            font-family: 'CirceBold';
                             font-size: 21px;
                             color: #333f50;
                             margin-right: 12px;
@@ -69,7 +70,6 @@ header {
         }
         a{
             text-decoration: none;
-            font-family: CirceBold;
             text-transform: uppercase;
             text-align: center;
             color: #028f58;

@@ -1,4 +1,6 @@
 .Input{
+    display: flex;
+    flex-direction: column;
     input{
         width: 380px;
         border-radius: 6px;
@@ -12,7 +14,8 @@
         transition: all .3s;
     }
     span{
-        color: red
+        color: red;
+        margin-bottom: 30px;
     }
     .inValid::placeholder{
         color: red

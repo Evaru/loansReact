@@ -26,6 +26,15 @@ module.exports = {
      {
       test: /\.(png|jpg)$/,
       use: ["url-loader"],
+    },
+    {
+      test: /\.(ttf|eot|woff|woff2|otf)$/,
+      use: {
+        loader: "file-loader",
+        options: {
+          name: "fonts/[name].[ext]",
+        },
+      }
     }
     
     ]

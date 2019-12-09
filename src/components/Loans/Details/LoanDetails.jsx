@@ -29,7 +29,7 @@ class LoanDetails extends Component {
     }
 
     render(){
-        let data =JSON.parse(localStorage.getItem("data"));
+        let items =JSON.parse(localStorage.getItem("data"));
         const { disabled, classButton } = this.state
 
         return(
@@ -37,9 +37,10 @@ class LoanDetails extends Component {
             <div>
                 <Hedaer/>
                 <div className="contentMain">
-                {[data].map(function(item,i){
+                {[items].map(function(item,i){
                     const data=item.data
                     const issueDetails = data.issue_method.issue_method_details
+                    
                 return(
                     <div key={i} className="LoansForm ">
                         <h1>Детали займа №{data.number}</h1>
@@ -49,7 +50,6 @@ class LoanDetails extends Component {
                                 label='Номер'
                                 disabled={disabled}
                                 value={data.number} 
-                                
                             />
                             <TextField 
                                 name="status"
